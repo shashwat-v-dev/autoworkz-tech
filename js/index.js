@@ -57,10 +57,7 @@ document.getElementById('themeToggle').addEventListener('click', function () {
     document.documentElement.dataset.theme = next;
     localStorage.setItem('awt-theme', next);
 });
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-    if (!localStorage.getItem('awt-theme'))
-        document.documentElement.dataset.theme = e.matches ? 'dark' : 'light';
-});
+
 
 /* ── Contact form → Formspree ── */
 // ⬇️  Replace 'YOUR_FORM_ID' with the ID from https://formspree.io/

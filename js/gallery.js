@@ -22,10 +22,7 @@ document.getElementById('themeToggle').addEventListener('click', function () {
     document.documentElement.dataset.theme = next;
     localStorage.setItem('awt-theme', next);
 });
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-    if (!localStorage.getItem('awt-theme'))
-        document.documentElement.dataset.theme = e.matches ? 'dark' : 'light';
-});
+
 
 // ── Reveal on scroll ──────────────────────
 const io = new IntersectionObserver((entries) => {

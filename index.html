@@ -14,11 +14,10 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="css/index.css" />
     <script>
-        /* Prevent flash of wrong theme */
+        /* Prevent flash of wrong theme — default: dark */
         (function () {
-            var saved = localStorage.getItem('awt-theme');
-            var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            document.documentElement.dataset.theme = saved || sys;
+            document.documentElement.dataset.theme =
+                localStorage.getItem('awt-theme') || 'dark';
         })();
     </script>
 </head>
