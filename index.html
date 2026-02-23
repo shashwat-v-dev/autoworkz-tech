@@ -1,0 +1,600 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Autoworkz Tech — Premium Luxury Car Service, New Delhi</title>
+    <meta name="description"
+        content="Autoworkz Tech — 40+ years of precision luxury car servicing in New Delhi. 24,000 sq ft workshop. Porsche, Mercedes, BMW, Bentley &amp; more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script>
+        /* Prevent flash of wrong theme */
+        (function () {
+            var saved = localStorage.getItem('awt-theme');
+            var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.dataset.theme = saved || sys;
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- ══════════ NAVBAR ══════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="awt-h-logo.png" alt="Autoworkz Tech Logo"
+                    style="height:44px;width:auto;display:block;filter:drop-shadow(0 0 10px rgba(0,212,200,.35));" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">
+                    <span class="tt-track">
+                        <span class="tt-thumb">
+                            <svg class="tt-icon tt-sun" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="4" />
+                                <line x1="12" y1="2" x2="12" y2="4" />
+                                <line x1="12" y1="20" x2="12" y2="22" />
+                                <line x1="4.93" y1="4.93" x2="6.34" y2="6.34" />
+                                <line x1="17.66" y1="17.66" x2="19.07" y2="19.07" />
+                                <line x1="2" y1="12" x2="4" y2="12" />
+                                <line x1="20" y1="12" x2="22" y2="12" />
+                                <line x1="4.93" y1="19.07" x2="6.34" y2="17.66" />
+                                <line x1="17.66" y1="6.34" x2="19.07" y2="4.93" />
+                            </svg>
+                            <svg class="tt-icon tt-moon" viewBox="0 0 24 24">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </span>
+                </button>
+                <div class="nav-div"></div>
+                <button class="hamburger" id="hbg" aria-label="Menu"><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══════════ MOBILE NAV ══════════ -->
+    <div class="nav-mobile" id="navMobile">
+        <div class="nav-mobile-inner">
+            <a href="#home" class="nav-m-link">Home</a>
+            <a href="#about" class="nav-m-link">About</a>
+            <a href="#services" class="nav-m-link">Services</a>
+            <a href="#brands" class="nav-m-link">Brands</a>
+            <a href="gallery.html" class="nav-m-link">Gallery</a>
+            <a href="#contact" class="nav-m-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="home">
+        <div class="hero-lines">
+            <svg viewBox="0 0 800 600" preserveAspectRatio="xMaxYMin meet" fill="none">
+                <line x1="500" y1="-20" x2="820" y2="280" stroke="rgba(255,255,255,0.11)" stroke-width="1" />
+                <line x1="545" y1="-20" x2="865" y2="280" stroke="rgba(255,255,255,0.07)" stroke-width="1" />
+                <line x1="590" y1="-20" x2="910" y2="280" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                <line x1="455" y1="-20" x2="775" y2="280" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+            </svg>
+        </div>
+        <div class="hero-img-wrap" id="heroImg">
+            <div class="hero-fade"></div>
+            <img src="porsche-img.png" alt="Luxury performance vehicle at Autoworkz Tech workshop" />
+        </div>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="hero-eyebrow" id="hEye">New Delhi's Finest Workshop</p>
+                <h1 class="hero-headline" id="hHead">Precision Service.<br />Peak Performance.</h1>
+                <p class="hero-sub" id="hSub">Since 1984, Autoworkz Tech has delivered precision engineering and
+                    premium
+                    service for the world's finest automotive brands. 24,000 sq ft advanced workshop facility in New
+                    Delhi.</p>
+                <div class="hero-btns" id="hBtns">
+                    <a href="#contact" class="btn-primary">Book Consultation</a>
+                    <a href="tel:+919810040005" class="btn-ghost">Call Now</a>
+                </div>
+                <div class="hero-stats" id="hStats">
+                    <div class="stat-item">
+                        <div class="stat-num">40+</div>
+                        <div class="stat-lbl">Years of<br />Excellence</div>
+                    </div>
+                    <div class="stat-div"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">24K</div>
+                        <div class="stat-lbl">Sq Ft Advanced<br />Workshop</div>
+                    </div>
+                    <div class="stat-div"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">OEM</div>
+                        <div class="stat-lbl">Parts &amp;<br />Premium Brands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-sep" />
+
+    <!-- ══════════ ABOUT ══════════ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img-block reveal">
+                    <!-- Workshop visual placeholder -->
+                    <svg width="100%" height="100%" viewBox="0 0 500 420" fill="none"
+                        style="position:absolute;inset:0;">
+                        <rect width="500" height="420" fill="#242424" />
+                        <!-- Floor lines perspective -->
+                        <line x1="250" y1="420" x2="0" y2="200" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+                        <line x1="250" y1="420" x2="500" y2="200" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+                        <line x1="250" y1="420" x2="125" y2="200" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+                        <line x1="250" y1="420" x2="375" y2="200" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+                        <!-- Car silhouette -->
+                        <ellipse cx="250" cy="340" rx="180" ry="18" fill="rgba(0,212,200,0.06)" />
+                        <path
+                            d="M100 290 Q130 240 200 225 Q250 218 300 225 Q370 240 400 290 L410 320 Q410 335 395 335 L105 335 Q90 335 90 320 Z"
+                            fill="#2a2a2a" stroke="rgba(0,212,200,0.3)" stroke-width="1.5" />
+                        <path d="M160 225 Q190 185 250 180 Q310 185 340 225" fill="#222" stroke="rgba(0,212,200,0.2)"
+                            stroke-width="1" />
+                        <!-- Wheel circles -->
+                        <circle cx="155" cy="332" r="28" fill="#1a1a1a" stroke="rgba(0,212,200,0.4)" stroke-width="2" />
+                        <circle cx="155" cy="332" r="16" fill="#141414" stroke="#333" stroke-width="1" />
+                        <circle cx="345" cy="332" r="28" fill="#1a1a1a" stroke="rgba(0,212,200,0.4)" stroke-width="2" />
+                        <circle cx="345" cy="332" r="16" fill="#141414" stroke="#333" stroke-width="1" />
+                        <!-- Lift arms -->
+                        <rect x="85" y="335" width="330" height="8" rx="4" fill="#333" stroke="#444" stroke-width="1" />
+                        <rect x="115" y="343" width="12" height="60" rx="4" fill="#2a2a2a" />
+                        <rect x="373" y="343" width="12" height="60" rx="4" fill="#2a2a2a" />
+                        <!-- Workshop lights -->
+                        <rect x="80" y="60" width="340" height="8" rx="4" fill="#2a2a2a" />
+                        <ellipse cx="160" cy="68" rx="30" ry="6" fill="rgba(0,212,200,0.08)" />
+                        <ellipse cx="250" cy="68" rx="30" ry="6" fill="rgba(0,212,200,0.08)" />
+                        <ellipse cx="340" cy="68" rx="30" ry="6" fill="rgba(0,212,200,0.08)" />
+                        <text x="250" y="160" text-anchor="middle" font-family="'Orbitron',sans-serif" font-size="13"
+                            fill="rgba(0,212,200,0.5)" letter-spacing="3">AUTOWORKZ TECH</text>
+                    </svg>
+                    <div class="about-badge">
+                        <div class="about-badge-num">1984</div>
+                        <div class="about-badge-lbl">Year Established</div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <div>
+                        <p class="section-eyebrow">Who We Are</p>
+                        <h2 class="section-title" style="margin-bottom:20px;">About Autoworkz Tech</h2>
+                    </div>
+                    <p>Autoworkz Tech, established in 1984, is a premium multi-brand car repair and service
+                        workshop
+                        specialising in luxury and performance vehicles. With over four decades of excellence,
+                        we have
+                        built our reputation on precision, accuracy, and uncompromising quality standards.</p>
+                    <p>Our 24,000 sq ft facility is one of the largest independent luxury workshops in India,
+                        equipped
+                        with advanced European diagnostic systems and hydraulic lifts. We provide end-to-end
+                        solutions
+                        for premium vehicles — from diagnostics to full restoration.</p>
+                    <p>Located near Radisson Hotel, Mahipalpur, New Delhi, our workshop serves discerning
+                        vehicle owners
+                        across the NCR region who demand nothing less than the best.</p>
+                    <div class="about-pills">
+                        <span class="pill">European Diagnostics</span>
+                        <span class="pill">Hydraulic Lifts</span>
+                        <span class="pill">OEM Parts</span>
+                        <span class="pill">Advanced Paint Booth</span>
+                        <span class="pill">Multi-Brand Specialist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-sep" />
+
+    <!-- ══════════ SERVICES ══════════ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-intro reveal">
+                <p class="section-eyebrow">What We Do</p>
+                <h2 class="section-title">Services We Cover</h2>
+                <p class="section-sub">We deliver comprehensive luxury vehicle servicing using OEM-grade parts
+                    and
+                    global brand-certified components.</p>
+            </div>
+            <div class="services-grid" id="svcGrid">
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                            <path d="M8 12h8M12 8v8" />
+                        </svg></div>
+                    <div class="svc-title">General &amp; Periodic Maintenance</div>
+                    <div class="svc-desc">Scheduled servicing, oil changes, filter replacements, and full
+                        vehicle
+                        checks.</div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M12 2v3M12 19v3M2 12h3M19 12h3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" />
+                        </svg></div>
+                    <div class="svc-title">Vehicle Diagnostics</div>
+                    <div class="svc-desc">Advanced European diagnostic systems for accurate fault detection and
+                        resolution.</div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <rect x="3" y="11" width="18" height="10" rx="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg></div>
+                    <div class="svc-title">Air Conditioning &amp; Heating</div>
+                    <div class="svc-desc">Full HVAC servicing, refrigerant recharge, compressor and blower
+                        repairs.
+                    </div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9z" />
+                        </svg></div>
+                    <div class="svc-title">Electrical System Diagnostics</div>
+                    <div class="svc-desc">Full electrical inspection, ECU reprogramming, wiring and sensor
+                        repairs.
+                    </div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z" />
+                            <path d="M12 6v6l4 2" />
+                        </svg></div>
+                    <div class="svc-title">Engine &amp; Drivetrain Systems</div>
+                    <div class="svc-desc">Engine overhauls, transmission service, clutch, and drivetrain
+                        repairs.</div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg></div>
+                    <div class="svc-title">Brake Systems</div>
+                    <div class="svc-desc">Brake pad/disc replacement, caliper servicing, ABS and stability
+                        control
+                        repairs.</div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9,22 9,12 15,12 15,22" />
+                        </svg></div>
+                    <div class="svc-title">Air Suspension &amp; Chassis</div>
+                    <div class="svc-desc">Air spring, strut, and adaptive suspension diagnostics and
+                        replacement.</div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg></div>
+                    <div class="svc-title">Body Shop</div>
+                    <div class="svc-desc">Dent removal, panel beating, structural repairs and full body
+                        restoration.
+                    </div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                        </svg></div>
+                    <div class="svc-title">Major &amp; Minor Paint Jobs</div>
+                    <div class="svc-desc">State-of-the-art paint booth with OEM-matched colour mixing for any
+                        finish.
+                    </div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                            <line x1="7" y1="7" x2="7.01" y2="7" />
+                        </svg></div>
+                    <div class="svc-title">Interior &amp; Exterior Detailing</div>
+                    <div class="svc-desc">Full car spa, ceramic coating, leather care, and deep interior
+                        sanitisation.
+                    </div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                        </svg></div>
+                    <div class="svc-title">Body Kits &amp; Alloy Wheels</div>
+                    <div class="svc-desc">Fitment of premium body kits, alloy wheels, and performance upgrades.
+                    </div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+                <div class="svc-card">
+                    <div class="svc-icon"><svg viewBox="0 0 24 24">
+                            <path d="M1 3h4l3 9-1.5 2.5A11 11 0 0 0 12 17h9" />
+                            <path d="M16 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0M6 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0" />
+                        </svg></div>
+                    <div class="svc-title">Emergency Flatbed Service</div>
+                    <div class="svc-desc">24/7 roadside assistance and flatbed towing across New Delhi NCR.
+                    </div>
+                    <div class="svc-arrow">→</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-sep" />
+
+    <!-- ══════════ WHY US ══════════ -->
+    <section class="why" id="why">
+        <div class="why-bg"></div>
+        <div class="container why-inner">
+            <div class="reveal">
+                <p class="section-eyebrow">Our Advantage</p>
+                <h2 class="section-title">Why Choose Autoworkz Tech?</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-list">
+                    <div class="why-item reveal">
+                        <div class="why-num">01</div>
+                        <div class="why-item-text">
+                            <h4>40+ Years of Automotive Excellence</h4>
+                            <p>Four decades of hands-on expertise servicing the world's most prestigious
+                                vehicles.</p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">02</div>
+                        <div class="why-item-text">
+                            <h4>European-Style Hydraulic Lifts</h4>
+                            <p>State-of-the-art German hydraulic lifts for safe, precise underbody access.</p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">03</div>
+                        <div class="why-item-text">
+                            <h4>OEM-Grade Parts from Global Suppliers</h4>
+                            <p>Wide stock of genuine-spec components ensuring manufacturer-level reliability.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">04</div>
+                        <div class="why-item-text">
+                            <h4>Save Up to 40% vs Dealerships</h4>
+                            <p>Premium quality servicing at significantly lower cost than authorised
+                                dealerships.</p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">05</div>
+                        <div class="why-item-text">
+                            <h4>Advanced Paint Booth Technology</h4>
+                            <p>Climate-controlled downdraft paint booth for flawless factory-finish results.</p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">06</div>
+                        <div class="why-item-text">
+                            <h4>Customised Retrofit &amp; Upgrade Solutions</h4>
+                            <p>Bespoke upgrades tailored to your vehicle's requirements and performance goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-visual reveal">
+                    <div class="why-visual-inner">
+                        <div class="big-num">40+</div>
+                        <div class="big-lbl">Years of Precision</div>
+                        <div class="big-sub">24,000 Sq Ft · New Delhi<br />European Diagnostics · OEM Parts
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-sep" />
+
+    <!-- ══════════ BRANDS WE SERVICE ══════════ -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="reveal" style="margin-bottom:0;">
+                <p class="section-eyebrow">Our Expertise</p>
+                <h2 class="section-title">Luxury Brands We Service</h2>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-tile reveal">Mercedes&#8209;Benz</div>
+                <div class="brand-tile reveal">Porsche</div>
+                <div class="brand-tile reveal">BMW</div>
+                <div class="brand-tile reveal">Audi</div>
+                <div class="brand-tile reveal">Jaguar</div>
+                <div class="brand-tile reveal">Land Rover</div>
+                <div class="brand-tile reveal">Range Rover</div>
+                <div class="brand-tile reveal">Bentley</div>
+                <div class="brand-tile reveal">Rolls&#8209;Royce</div>
+                <div class="brand-tile reveal">Ferrari</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-sep" />
+
+    <!-- ══════════ OEM PARTNERS ══════════ -->
+    <section class="partners">
+        <div class="partners-label reveal">
+            <p class="section-eyebrow" style="text-align:center;">Trusted Suppliers</p>
+            <h2 class="section-title" style="text-align:center;font-size:clamp(20px,2.5vw,30px);">OEM &amp;
+                Partner
+                Brands</h2>
+        </div>
+        <div class="partners-track-wrap">
+            <div class="partners-track" id="pTrack">
+                <!-- duplicated for seamless loop -->
+                <div class="partner-chip">Bosch</div>
+                <div class="partner-chip">Sachs</div>
+                <div class="partner-chip">Delphi</div>
+                <div class="partner-chip">Yokohama</div>
+                <div class="partner-chip">Pirelli</div>
+                <div class="partner-chip">Mobil</div>
+                <div class="partner-chip">Meyle</div>
+                <div class="partner-chip">Mahle</div>
+                <div class="partner-chip">Denso</div>
+                <div class="partner-chip">Magneti Marelli</div>
+                <div class="partner-chip">Brembo</div>
+                <div class="partner-chip">TRW</div>
+                <div class="partner-chip">Liqui Moly</div>
+                <div class="partner-chip">Wurth</div>
+                <div class="partner-chip">Hengst</div>
+                <div class="partner-chip">Snap-On</div>
+                <div class="partner-chip">Bosch</div>
+                <div class="partner-chip">Sachs</div>
+                <div class="partner-chip">Delphi</div>
+                <div class="partner-chip">Yokohama</div>
+                <div class="partner-chip">Pirelli</div>
+                <div class="partner-chip">Mobil</div>
+                <div class="partner-chip">Meyle</div>
+                <div class="partner-chip">Mahle</div>
+                <div class="partner-chip">Denso</div>
+                <div class="partner-chip">Magneti Marelli</div>
+                <div class="partner-chip">Brembo</div>
+                <div class="partner-chip">TRW</div>
+                <div class="partner-chip">Liqui Moly</div>
+                <div class="partner-chip">Wurth</div>
+                <div class="partner-chip">Hengst</div>
+                <div class="partner-chip">Snap-On</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-sep" />
+
+    <!-- ══════════ CONTACT ══════════ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-eyebrow">Get In Touch</p>
+                <h2 class="section-title">Book Your Service</h2>
+            </div>
+            <div class="contact-grid">
+                <form class="contact-form reveal" onsubmit="handleForm(event)">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="fc-name">Full Name</label>
+                            <input type="text" id="fc-name" placeholder="Your name" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="fc-email">Email Address</label>
+                            <input type="email" id="fc-email" placeholder="you@example.com" required />
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="fc-phone">Phone Number</label>
+                        <input type="tel" id="fc-phone" placeholder="+91 XXXXX XXXXX" />
+                    </div>
+                    <div class="form-field">
+                        <label for="fc-vehicle">Vehicle (Make &amp; Model)</label>
+                        <input type="text" id="fc-vehicle" placeholder="e.g. Porsche 911, Mercedes GLE" />
+                    </div>
+                    <div class="form-field">
+                        <label for="fc-msg">Message / Service Required</label>
+                        <textarea id="fc-msg" placeholder="Describe what you need..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="align-self:flex-start;">Send Enquiry
+                        →</button>
+                </form>
+                <div class="contact-info reveal">
+                    <div class="contact-info-block">
+                        <h3>Autoworkz Tech</h3>
+                        <div class="ci-tag">Premium Multi-Brand Workshop · Est. 1984</div>
+                        <div class="ci-row">
+                            <div class="ci-icon"><svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg></div>
+                            <div class="ci-detail"><strong>Address</strong>Plot No. 619, Block A, Rangpuri
+                                (Mahipalpur),<br />Near Radisson Hotel, New Delhi – 110037, India</div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-icon"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg></div>
+                            <div class="ci-detail"><strong>Phone</strong><a href="tel:+919810040005">+91 98100
+                                    40005</a><br /><a href="tel:+919990040005">+91 99900 40005</a></div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-icon"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg></div>
+                            <div class="ci-detail"><strong>Email</strong><a
+                                    href="mailto:service@autoworkztech.com">service@autoworkztech.com</a></div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-icon"><svg viewBox="0 0 24 24">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <path d="M8 21h8M12 17v4" />
+                                </svg></div>
+                            <div class="ci-detail"><strong>Workshop</strong>24,000 Sq Ft · European
+                                Diagnostics<br />Hydraulic Lifts · Advanced Paint Booth</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">© 2026 <strong>Autoworkz Tech</strong> · Est. 1984 · New Delhi, India</div>
+            <div class="footer-right">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#brands">Brands</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
