@@ -60,6 +60,20 @@
     background: linear-gradient(135deg, #eceae4 0%, #e3e1da 100%);
 }
 
+/* About Badge */
+[data-theme="light"] .about-badge-lbl {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Home Gallery Fade */
+[data-theme="light"] .hg-track-wrap::before {
+    background: linear-gradient(to right, #f4f2eb 0%, transparent 100%);
+}
+
+[data-theme="light"] .hg-track-wrap::after {
+    background: linear-gradient(to left, #f4f2eb 0%, transparent 100%);
+}
+
 /* ══ THEME TOGGLE PILL ══ */
 .theme-toggle {
     background: none;
@@ -198,6 +212,14 @@ ul {
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+}
+
+.logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(0, 212, 200, .35));
+    transition: height var(--fast);
 }
 
 .logo-icon {
@@ -743,14 +765,99 @@ ul {
 }
 
 .svc-arrow {
-    margin-top: auto;
-    font-size: 14px;
-    color: var(--accent);
-    transition: transform var(--fast);
+    display: none;
 }
 
-.svc-card:hover .svc-arrow {
-    transform: translateX(5px);
+/* ══════════════ HOME GALLERY ══════════════ */
+.home-gallery {
+    padding: 96px 0;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+}
+
+.gallery-header {
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.hg-track-wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Optional fade effects on sides */
+.hg-track-wrap::before,
+.hg-track-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hg-track-wrap::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+}
+
+.hg-track-wrap::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+}
+
+.hg-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll-gallery 30s linear infinite;
+}
+
+.hg-track:hover {
+    animation-play-state: paused;
+}
+
+.hg-item {
+    flex-shrink: 0;
+    width: calc(33.333vw - 20px);
+    max-width: 400px;
+    min-width: 300px;
+    height: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border);
+}
+
+.hg-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--slow);
+}
+
+.hg-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 56px;
+}
+
+@keyframes scroll-gallery {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 10px));
+    }
 }
 
 /* ══════════════ WHY US ══════════════ */
@@ -1259,11 +1366,19 @@ ul {
     .hero-headline {
         font-size: clamp(30px, 5vw, 50px);
     }
+
+    .hg-item {
+        width: calc(50vw - 20px);
+    }
 }
 
 @media(max-width:768px) {
     .container {
         padding: 0 20px;
+    }
+
+    .logo img {
+        height: 28px;
     }
 
     .nav-links {
@@ -1272,6 +1387,11 @@ ul {
 
     .nav-right {
         margin-left: auto;
+        gap: 16px;
+    }
+
+    .theme-toggle {
+        margin-right: 0;
     }
 
     .hero {
@@ -1303,7 +1423,7 @@ ul {
     }
 
     .hero-img-wrap img {
-        object-position: center bottom;
+        object-position: center center;
     }
 
     .hero-fade,
@@ -1373,6 +1493,15 @@ ul {
 
     .contact {
         padding: 64px 0;
+    }
+
+    .home-gallery {
+        padding: 64px 0;
+    }
+
+    .hg-item {
+        width: calc(100vw - 40px);
+        min-width: 260px;
     }
 
     .form-row {
@@ -1468,23 +1597,33 @@ ul {
 }
 
 .nav-m-link {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     color: var(--txt);
     padding: 14px 0;
-    border-bottom: 1px solid var(--border);
-    transition: color var(--fast), padding-left 0.2s ease;
-    display: block;
-    letter-spacing: -0.01em;
+    transition: color var(--fast);
+    display: inline-block;
+    position: relative;
+    letter-spacing: .02em;
 }
 
-.nav-m-link:last-child {
-    border-bottom: none;
+.nav-m-link::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width var(--fast);
 }
 
 .nav-m-link:hover {
     color: var(--accent);
-    padding-left: 10px;
+}
+
+.nav-m-link:hover::after {
+    width: 100%;
 }
 
 .hamburger.open span:first-child {

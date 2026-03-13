@@ -184,6 +184,14 @@ ul {
     flex-shrink: 0;
 }
 
+.logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(0, 212, 200, .35));
+    transition: height var(--fast);
+}
+
 .logo-icon {
     width: 40px;
     height: 40px;
@@ -707,12 +715,21 @@ ul {
         padding: 0 20px;
     }
 
+    .logo img {
+        height: 28px;
+    }
+
     .nav-links {
         display: none;
     }
 
     .nav-right {
         margin-left: auto;
+        gap: 16px;
+    }
+
+    .theme-toggle {
+        margin-right: 0;
     }
 
     .page-hero {
@@ -773,23 +790,33 @@ ul {
 }
 
 .nav-m-link {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     color: var(--txt);
     padding: 14px 0;
-    border-bottom: 1px solid var(--border);
-    transition: color var(--fast), padding-left 0.2s ease;
-    display: block;
-    letter-spacing: -0.01em;
+    transition: color var(--fast);
+    display: inline-block;
+    position: relative;
+    letter-spacing: .02em;
 }
 
-.nav-m-link:last-child {
-    border-bottom: none;
+.nav-m-link::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width var(--fast);
 }
 
 .nav-m-link:hover {
     color: var(--accent);
-    padding-left: 10px;
+}
+
+.nav-m-link:hover::after {
+    width: 100%;
 }
 
 .hamburger.open span:first-child {
