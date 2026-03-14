@@ -1,4 +1,4 @@
-﻿/* ── Navbar scroll ── */
+/* ── Navbar scroll ── */
 const nav = document.getElementById('navbar');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), { passive: true });
 
@@ -59,10 +59,10 @@ document.getElementById('themeToggle').addEventListener('click', function () {
 });
 
 
-/* ── Contact form → Formspree ── */
-// ⬇️  Replace 'YOUR_FORM_ID' with the ID from https://formspree.io/
-// (sign up free → New Form → paste service@autoworkztech.com → copy the 8-char ID)
-var FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+/* ── Contact form → FormSubmit ── */
+// Uses FormSubmit.co for easy email forwarding without backend code.
+// ❗️ The very first time the form is submitted, FormSubmit will send an activation email to service@autoworkztech.com. You must click 'Activate' in that email.
+var FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/service@autoworkztech.com';
 
 async function handleForm(e) {
     e.preventDefault();
@@ -82,12 +82,15 @@ async function handleForm(e) {
     };
 
     try {
-        var res = await fetch(FORMSPREE_ENDPOINT, {
+        var res = await fetch(FORMSUBMIT_ENDPOINT, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify(data)
         });
-        if (res.ok) {
+        
+        var result = await res.json();
+        
+        if (result.success === "true" || res.ok) {
             btn.textContent = 'Sent! ✓';
             btn.style.background = '#00a89e';
             form.reset();
